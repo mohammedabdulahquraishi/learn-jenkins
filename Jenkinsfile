@@ -7,10 +7,16 @@ pipeline {
     environment {
         GREETING = 'Hello Jenkins, I am Abdulah'
     }
+    parameters {
+        string (name:'PERSON', defaultValue:'Mr.Jenkins', description:'who are you')
+        booleanParam(name: 'TOGGLE',defaultValue:'toggle', description:'toggle' )
+
+    }
     stages {
         stage('build') {
             steps {
                 echo "Hello world!"
+                echo 'hello $(params.PERSON)'
 
             }
         }
