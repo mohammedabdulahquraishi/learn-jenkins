@@ -16,7 +16,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello world!"
-                echo 'hello $(params.PERSON)'
+                echo 'hello ${params.PERSON}'
 
             }
         }
