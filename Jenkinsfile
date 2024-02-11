@@ -21,11 +21,11 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh " " " 
+                sh """ 
                 echo 'deploying jenkins ...............'
 
                 env
-                " " "
+                """
             }
         }
     }
