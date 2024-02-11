@@ -4,10 +4,14 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    environment {
+        GREETING = 'Hello Jenkins'
+    }
     stages {
         stage('build') {
             steps {
-                echo 'Hello world!'
+                echo "Hello world!"
+
             }
         }
         stage('test') {
@@ -17,7 +21,11 @@ pipeline {
         }
         stage('deploy') {
             steps {
+                sh " " " 
                 echo 'deploying jenkins ...............'
+
+                env
+                " " "
             }
         }
     }
