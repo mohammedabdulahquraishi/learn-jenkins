@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh """ 
                 echo 'deploying jenkins ...............'
-                echo '$GREETING'
+                $GREETING
                 """
             }
         }
