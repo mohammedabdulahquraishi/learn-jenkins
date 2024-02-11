@@ -10,6 +10,7 @@ pipeline {
     parameters {
         string (name:'PERSON', defaultValue:'Mr.Jenkins', description:'who are you')
         booleanParam(name: 'TOGGLE',defaultValue:'toggle', description:'toggle' )
+        choice(name: 'CHOICE', defaultValue: 'CHICH', description:'give your choice here')
 
     }
     stages {
@@ -18,6 +19,7 @@ pipeline {
                 echo "Hello world!"
                 echo 'hello ${params.PERSON}'
                 echo '$(params.TOGGLE)'
+                echo '${params.CHOICE}'
 
             }
         }
