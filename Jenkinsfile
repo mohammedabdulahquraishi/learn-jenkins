@@ -10,7 +10,7 @@ pipeline {
     parameters {
         string (name:'PERSON', defaultValue:'Mr.Jenkins', description:'who are you')
         booleanParam(name: 'TOGGLE',defaultValue:'toggle', description:'toggle' )
-        choice(name: 'CHOICE', defaultValue: 'CHICH', description:'give your choice here')
+        choice(name: 'CHOICE', defaultValue:'CHOICE', description:'give your choice here')
 
     }
     stages {
