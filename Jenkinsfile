@@ -17,6 +17,7 @@ pipeline {
             steps {
                 echo "Hello world!"
                 echo 'hello ${params.PERSON}'
+                echo '$(params.TOGGLE)'
 
             }
         }
